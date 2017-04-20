@@ -1,0 +1,145 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/azproduction/promise-queue#readme"
+
+    >promise-queue (v2.2.3)</a>
+</h1>
+<h4>Promise-based queue</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.promise-queue">module promise-queue</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.promise-queue.promise-queue">
+            function <span class="apidocSignatureSpan"></span>promise-queue
+            <span class="apidocSignatureSpan">(maxPendingPromises, maxQueuedPromises)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.promise-queue.configure">
+            function <span class="apidocSignatureSpan">promise-queue.</span>configure
+            <span class="apidocSignatureSpan">(GlobalPromise)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.promise-queue" id="apidoc.module.promise-queue">module promise-queue</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.promise-queue.promise-queue" id="apidoc.element.promise-queue.promise-queue">
+        function <span class="apidocSignatureSpan"></span>promise-queue
+        <span class="apidocSignatureSpan">(maxPendingPromises, maxQueuedPromises)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Queue(maxPendingPromises, maxQueuedPromises) {
+    this.pendingPromises = 0;
+    this.maxPendingPromises = typeof maxPendingPromises !== &#x27;undefined&#x27; ? maxPendingPromises : Infinity;
+    this.maxQueuedPromises = typeof maxQueuedPromises !== &#x27;undefined&#x27; ? maxQueuedPromises : Infinity;
+    this.queue = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.promise-queue.configure" id="apidoc.element.promise-queue.configure">
+        function <span class="apidocSignatureSpan">promise-queue.</span>configure
+        <span class="apidocSignatureSpan">(GlobalPromise)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">configure = function (GlobalPromise) {
+    LocalPromise = GlobalPromise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Example
+
+### Configure queue
+
+By default `Queue` tries to use global Promises, but you can specify your own promises.
+
+```js
+Queue.<span class="apidocCodeKeywordSpan">configure</span>(require(&#x27;vow&#x27;).Promise);
+```
+
+Or use old-style promises approach:
+
+```js
+Queue.configure(function (handler) {
+var dfd = $.Deferred();
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
