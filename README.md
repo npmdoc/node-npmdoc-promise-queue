@@ -1,0 +1,72 @@
+# npmdoc-promise-queue
+
+#### api documentation for  [promise-queue (v2.2.3)](https://github.com/azproduction/promise-queue#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-promise-queue.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-promise-queue) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-promise-queue.svg)](https://travis-ci.org/npmdoc/node-npmdoc-promise-queue)
+
+#### Promise-based queue
+
+[![NPM](https://nodei.co/npm/promise-queue.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/promise-queue)
+
+- [https://npmdoc.github.io/node-npmdoc-promise-queue/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-promise-queue/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-promise-queue/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-promise-queue/build/apidoc.html)
+
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-promise-queue/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-promise-queue/build/screenCapture.npmPackageDependencyTree.svg)
+
+
+
+# package.json
+
+```json
+
+{
+    "author": "Mikhail Davydov <i@azproduction.ru>",
+    "description": "Promise-based queue",
+    "name": "promise-queue",
+    "version": "2.2.3",
+    "contributors": [
+        "Mikhail Davydov <i@azproduction.ru>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/azproduction/promise-queue.git"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "devDependencies": {
+        "jshint": "2.1.3",
+        "mocha": "1.11.0",
+        "jscs": "1.0.0",
+        "istanbul": "0.1.39",
+        "chai": "*",
+        "sinon": "*",
+        "vow": "0.4.1",
+        "sinon-chai": "*",
+        "mocha-istanbul": "*",
+        "coveralls": "*"
+    },
+    "scripts": {
+        "test": "make validate",
+        "lint": "make lint",
+        "coverage": "make coverage",
+        "clean": "make clean"
+    },
+    "bugs": {
+        "url": "https://github.com/azproduction/promise-queue/issues"
+    },
+    "homepage": "https://github.com/azproduction/promise-queue#readme",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {},
+    "license": "MIT"
+}
+```
+
+
+
+# misc
+- this document was created with [utility2](https://github.com/kaizhu256/node-utility2)
