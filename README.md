@@ -1,6 +1,6 @@
 # npmdoc-promise-queue
 
-#### api documentation for  [promise-queue (v2.2.3)](https://github.com/azproduction/promise-queue#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-promise-queue.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-promise-queue) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-promise-queue.svg)](https://travis-ci.org/npmdoc/node-npmdoc-promise-queue)
+#### basic api documentation for  [promise-queue (v2.2.3)](https://github.com/azproduction/promise-queue#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-promise-queue.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-promise-queue) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-promise-queue.svg)](https://travis-ci.org/npmdoc/node-npmdoc-promise-queue)
 
 #### Promise-based queue
 
@@ -21,48 +21,64 @@
 ```json
 
 {
-    "author": "Mikhail Davydov <i@azproduction.ru>",
-    "description": "Promise-based queue",
-    "name": "promise-queue",
-    "version": "2.2.3",
-    "contributors": [
-        "Mikhail Davydov <i@azproduction.ru>"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/azproduction/promise-queue.git"
-    },
-    "engines": {
-        "node": ">= 0.8.0"
-    },
-    "devDependencies": {
-        "jshint": "2.1.3",
-        "mocha": "1.11.0",
-        "jscs": "1.0.0",
-        "istanbul": "0.1.39",
-        "chai": "*",
-        "sinon": "*",
-        "vow": "0.4.1",
-        "sinon-chai": "*",
-        "mocha-istanbul": "*",
-        "coveralls": "*"
-    },
-    "scripts": {
-        "test": "make validate",
-        "lint": "make lint",
-        "coverage": "make coverage",
-        "clean": "make clean"
+    "author": {
+        "name": "Mikhail Davydov"
     },
     "bugs": {
         "url": "https://github.com/azproduction/promise-queue/issues"
     },
-    "homepage": "https://github.com/azproduction/promise-queue#readme",
-    "main": "index.js",
+    "contributors": [
+        {
+            "name": "Mikhail Davydov"
+        }
+    ],
+    "dependencies": {},
+    "description": "Promise-based queue",
+    "devDependencies": {
+        "chai": "*",
+        "coveralls": "*",
+        "istanbul": "0.1.39",
+        "jscs": "1.0.0",
+        "jshint": "2.1.3",
+        "mocha": "1.11.0",
+        "mocha-istanbul": "*",
+        "sinon": "*",
+        "sinon-chai": "*",
+        "vow": "0.4.1"
+    },
     "directories": {
         "test": "test"
     },
-    "dependencies": {},
-    "license": "MIT"
+    "dist": {
+        "shasum": "8534d76bf4673c3baa3a82bba01bd295cc30f14f",
+        "tarball": "https://registry.npmjs.org/promise-queue/-/promise-queue-2.2.3.tgz"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "gitHead": "b8c5722bbc5951ca89bd8cc5ef22bdcfdbcea339",
+    "homepage": "https://github.com/azproduction/promise-queue#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "azproduction"
+        }
+    ],
+    "name": "promise-queue",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/azproduction/promise-queue.git"
+    },
+    "scripts": {
+        "clean": "make clean",
+        "coverage": "make coverage",
+        "lint": "make lint",
+        "test": "make validate"
+    },
+    "version": "2.2.3",
+    "bin": {}
 }
 ```
 
